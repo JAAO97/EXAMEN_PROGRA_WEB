@@ -2,102 +2,119 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>MUBLESIG HONDURAS - Licitaciones</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUBLESIG HONDURAS - Lotes Especiales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <div>
-        <p>Teléfonos de atención: 2773-4589 | 2238-7612</p>
-        <p>Horario de taller: Lun-Vie 8am - 5pm</p>
+    <div class="barra-superior">
+        <div class="container">
+            Teléfonos de atención: 2773-4589 | 2238-7612 &nbsp;&nbsp;|&nbsp;&nbsp; Horario de taller: Lun-Vie 8am - 5pm
+        </div>
     </div>
 
-    <header>
-        <h1>MUBLESIG HONDURAS</h1>
-        <nav>
-            <a href="index.html">Inicio</a> |
-            <a href="catalogo.html">Catálogo</a> |
-            <a href="lotes.html">Lotes Especiales</a> |
-            <a href="licitaciones.html">Licitaciones</a> |
-            <a href="contacto.html">Contacto</a> |
-            <a href="https://wa.me/50497527953" target="_blank">Cotizar Lote por WhatsApp</a>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">MUBLESIG HONDURAS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lotes.html">Lotes Especiales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="licitaciones.html">Licitaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+                <a href="https://wa.me/50497527953" class="btn btn-whatsapp" target="_blank">Cotizar Lote por WhatsApp</a>
+            </div>
+        </div>
+    </nav>
 
-    <hr>
+    <main class="container my-5">
+        <h2 class="mb-4">Formulario para Requisitos y Licitaciones</h2>
+        <p class="mb-4">Complete el siguiente formulario para solicitar una cotización formal o participar en una licitación.</p>
 
-    <main>
-        <h2>Formulario para Requisitos y Licitaciones</h2>
-        <p>Complete el siguiente formulario para solicitar una cotización formal o participar en una licitación.</p>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form class="border rounded p-4 bg-white shadow-sm">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre del Solicitante</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
 
-        <form>
-            <p>
-                <label for="nombre">Nombre del Solicitante:</label><br>
-                <input type="text" id="nombre" name="nombre" required>
-            </p>
+                    <div class="mb-3">
+                        <label for="rtn" class="form-label">RTN Institucional (exactamente 14 dígitos numéricos)</label>
+                        <input type="text" class="form-control" id="rtn" name="rtn" maxlength="14" pattern="[0-9]{14}" required>
+                    </div>
 
-            <p>
-                <label for="rtn">RTN Institucional (exactamente 14 dígitos numéricos):</label><br>
-                <input type="text" id="rtn" name="rtn" maxlength="14" pattern="[0-9]{14}" required>
-            </p>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo Electrónico Institucional</label>
+                        <input type="email" class="form-control" id="correo" name="correo" required>
+                    </div>
 
-            <p>
-                <label for="correo">Correo Electrónico Institucional:</label><br>
-                <input type="email" id="correo" name="correo" required>
-            </p>
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Teléfono de Contacto</label>
+                        <input type="tel" class="form-control" id="telefono" name="telefono" required>
+                    </div>
 
-            <p>
-                <label for="telefono">Teléfono de Contacto:</label><br>
-                <input type="tel" id="telefono" name="telefono" required>
-            </p>
+                    <div class="mb-3">
+                        <label for="departamento" class="form-label">Departamento de Entrega</label>
+                        <select class="form-select" id="departamento" name="departamento" required>
+                            <option value="">Seleccione un departamento</option>
+                            <option value="Comayagua">Comayagua</option>
+                            <option value="Francisco Morazán">Francisco Morazán</option>
+                            <option value="Cortés">Cortés</option>
+                            <option value="La Paz">La Paz</option>
+                            <option value="Atlántida">Atlántida</option>
+                            <option value="Islas de la Bahía">Islas de la Bahía</option>
+                        </select>
+                    </div>
 
-            <p>
-                <label for="departamento">Departamento de Entrega:</label><br>
-                <select id="departamento" name="departamento" required>
-                    <option value="">Seleccione un departamento</option>
-                    <option value="Comayagua">Comayagua</option>
-                    <option value="Francisco Morazán">Francisco Morazán</option>
-                    <option value="Cortés">Cortés</option>
-                    <option value="La Paz">La Paz</option>
-                    <option value="Atlántida">Atlántida</option>
-                    <option value="Islas de la Bahía">Islas de la Bahía</option>
-                </select>
-            </p>
+                    <div class="mb-4 form-check">
+                        <input type="checkbox" class="form-check-input" id="garantia" name="garantia" required>
+                        <label class="form-check-label" for="garantia">Acepto los términos de garantía forestal de 5 años</label>
+                    </div>
 
-            <p>
-                <input type="checkbox" id="garantia" name="garantia" required>
-                <label for="garantia">Acepto los términos de garantía forestal de 5 años</label>
-            </p>
-
-            <p>
-                <button type="submit">Enviar Cotización</button>
-                <button type="reset">Limpiar Formulario</button>
-            </p>
-        </form>
-
+                    <div class="d-grid gap-2 d-md-flex">
+                        <button type="submit" class="btn btn-success">Enviar Cotización</button>
+                        <button type="reset" class="btn btn-outline-secondary">Limpiar Formulario</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </main>
 
-    <hr>
-
     <footer>
-        <h3>Información de Contacto</h3>
-        <p>
-            Fábrica en Siguatepeque:<br>
-            KM 114 Carretera CA-5, Siguatepeque - Tel: 2773-4589
-        </p>
-        <p>
-            Sala de ventas en Tegucigalpa:<br>
-            Blvd. Morazán, Tegucigalpa - Tel: 2238-7612
-        </p>
-
-        <h3>Redes Sociales</h3>
-        <p>
-            <a href="https://www.facebook.com" target="_blank">Facebook</a> |
-            <a href="https://www.instagram.com" target="_blank">Instagram</a>
-        </p>
-
-        <p>© 2026 MUBLESIG HONDURAS - Todos los derechos reservados</p>
-        <p>Jeser Aziel Amaya Ortiz - 20211030684. UNAH. Todos los derechos reservados.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Información de Contacto</h5>
+                    <p>
+                        <strong>Fábrica en Siguatepeque:</strong><br>
+                        KM 114 Carretera CA-5, Siguatepeque - Tel: 2773-4589
+                    </p>
+                    <p>
+                        <strong>Sala de ventas en Tegucigalpa:</strong><br>
+                        Blvd. Morazán, Tegucigalpa - Tel: 2238-7612
+                    </p>
+                </div>
+                <div class="col-md-6">    
+                    <h5>Redes Sociales</h5>
+                    <p>
+                        <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+                        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                    </p>
+                    <p>© 2026 MUBLESIG HONDURAS - Todos los derechos reservados</p>
+                    <p>Jeser Aziel Amaya Ortiz - 20211030684. UNAH. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>    
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

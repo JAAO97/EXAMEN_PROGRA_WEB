@@ -2,354 +2,389 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MUBLESIG HONDURAS - Catálogo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <div>
-        <p>Teléfonos de atención: 2773-4589 | 2238-7612</p>
-        <p>Horario de taller: Lun-Vie 8am - 5pm</p>
+    <div class="barra-superior">
+        <div class="container">
+            Teléfonos de atención: 2773-4589 | 2238-7612 &nbsp;&nbsp;|&nbsp;&nbsp; Horario de taller: Lun-Vie 8am - 5pm
+        </div>
     </div>
 
-    <header>
-        <h1>MUBLESIG HONDURAS</h1>
-        <nav>
-            <a href="index.html">Inicio</a> |
-            <a href="catalogo.html">Catálogo</a> |
-            <a href="lotes.html">Lotes Especiales</a> |
-            <a href="licitaciones.html">Licitaciones</a> |
-            <a href="contacto.html">Contacto</a> |
-            <a href="https://wa.me/50497527953" target="_blank">Cotizar Lote por WhatsApp</a>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">MUBLESIG HONDURAS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lotes.html">Lotes Especiales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="licitaciones.html">Licitaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+                <a href="https://wa.me/50497527953" class="btn btn-whatsapp" target="_blank">Cotizar Lote por WhatsApp</a>
+            </div>
+        </div>
+    </nav>
 
-    <hr>
+    <main class="container my-5">
+        <h2 class="mb-4">Catálogo de Productos</h2>
+        <p class="mb-5">Inventario actual de muebles de oficina y hotelería.</p>
 
-    <main>
-        <h2>Catálogo de Productos</h2>
-        <p>Inventario actual de muebles de oficina y hotelería.</p>
+        <div class="row">
 
-        <div>
-            <h3>Escritorio Ejecutivo en Caoba</h3>
-            <p>Categoría: Línea Ejecutiva</p>
-            <p>Precio: L. 24,500</p>
-            <p>Detalles técnicos:</p>
-            <ul>
-                <li>Tipo de madera: Caoba</li>
-                <li>Dimensiones: 160 cm x 80 cm x 75 cm</li>
-                <li>Acabado: Lacado brillante</li>
-                <li>Garantía: 5 años</li>
-            </ul>
-            <!-- <img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=400" alt="Escritorio Ejecutivo en Caoba" width="300"> -->
+            <div class="col-md-4">
+                <div class="card-producto">
+                    <img src="imagenes/escritorio-ejecutivo-caoba.jpg" alt="Escritorio Ejecutivo en Caoba">
+                    <div class="p-3">
+                        <h5>Escritorio Ejecutivo en Caoba</h5>
+                        <p class="text-muted mb-1">Categoría: Línea Ejecutiva</p>
+                        <p class="precio">L. 24,500</p>
+                        <ul class="small">
+                            <li>Madera: Caoba</li>
+                            <li>Dimensiones: 160 x 80 x 75 cm</li>
+                            <li>Acabado: Lacado brillante</li>
+                            <li>Garantía: 5 años</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        <div class="col-md-4">
+            <div class="card-producto">
+                <img src="imagenes/silla-ergonomica.jpg" alt="Silla Operativa Ergonómica">
+                <div class="p-3">
+                    <h5>Silla Operativa Ergonómica</h5>
+                    <p class="text-muted mb-1">Categoría: Línea Ejecutiva</p>
+                    <p class="precio">L. 4,800</p>
+                    <ul class="small">
+                        <li>Madera: Estructura metálica con respaldo de malla</li>
+                        <li>Dimensiones: 60 x 60 x 110 cm</li>
+                        <li>Acabado: Negro mate</li>
+                        <li>Garantía: 3 años</li>
+                    </ul>
+                </div>
+            </div>
+        </div>    
+
+        <div class="col-md-4">
+                <div class="card-producto">
+                    <img src="imagenes/mesa-directorio-cedro.jpg" alt="Mesa de Directorio en Cedro">
+                    <div class="p-3">
+                        <h5>Mesa de Directorio en Cedro</h5>
+                        <p class="text-muted mb-1">Categoría: Línea Ejecutiva</p>
+                        <p class="precio">L. 39,900</p>
+                        <ul class="small">
+                            <li>Madera: Cedro</li>
+                            <li>Dimensiones: 240 x 120 x 76 cm</li>
+                            <li>Acabado: Barniz natural</li>
+                            <li>Garantía: 5 años</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-producto">
+                    <img src="imagenes/estanteria-pino-oocarpa.jpg" alt="Estantería en Pino Oocarpa">
+                    <div class="p-3">
+                        <h5>Estantería en Pino Oocarpa</h5>
+                        <p class="text-muted mb-1">Categoría: Archivo</p>
+                        <p class="precio">L. 8,750</p>
+                        <ul class="small">
+                            <li>Madera: Pino Oocarpa</li>
+                            <li>Dimensiones: 90 x 40 x 180 cm</li>
+                            <li>Acabado: Barniz transparente</li>
+                            <li>Garantía: 3 años</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-producto">
+                    <img src="imagenes/pupitre-universitario.jpg" alt="Pupitre Universitario">
+                    <div class="p-3">
+                        <h5>Pupitre Universitario</h5>
+                        <p class="text-muted mb-1">Categoría: Aulas Universitarias</p>
+                        <p class="precio">L. 1,290</p>
+                        <ul class="small">
+                            <li>Pino y metal</li>
+                            <li>Dimensiones: 70 x 50 x 75 cm</li>
+                            <li>Acabado: Pintura epóxica</li>
+                            <li>Garantía: 2 años</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-producto">
+                    <img src="imagenes/mueble-recepcion-nogal.jpg" alt="Mueble de Recepción en Nogal">
+                    <div class="p-3">
+                        <h5>Mueble de Recepción en Nogal</h5>
+                        <p class="text-muted mb-1">Categoría: Hotelería</p>
+                        <p class="precio">L. 18,600</p>
+                        <ul class="small">
+                            <li>Madera: Nogal</li>
+                            <li>Dimensiones: 200 x 60 x 110 cm</li>
+                            <li>Acabado: Aceite natural</li>
+                            <li>Garantía: 5 años</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-producto">
+                    <img src="imagenes/escritorio-presidencial-caoba.jpg" alt="Escritorio Presidencial en Caoba">
+                    <div class="p-3">
+                        <h5>Escritorio Presidencial en Caoba</h5>
+                        <p class="text-muted mb-1">Categoría: Línea Ejecutiva</p>
+                        <p class="precio">L. 32,000</p>
+                        <ul class="small">
+                            <li>Madera: Caoba</li>
+                            <li>Dimensiones: 180 x 90 x 78 cm</li>
+                            <li>Acabado: Lacado alto brillo</li>
+                            <li>Garantía: 5 años</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-producto">
+                    <img src="imagenes/mesa-juntas-cedro.jpg" alt="Mesa de Juntas en Cedro">
+                    <div class="p-3">
+                        <h5>Mesa de Juntas en Cedro</h5>
+                        <p class="text-muted mb-1">Categoría: Línea Ejecutiva</p>
+                        <p class="precio">L. 27,500</p>
+                        <ul class="small">
+                            <li>Madera: Cedro</li>
+                            <li>Dimensiones: 300 x 120 x 76 cm</li>
+                            <li>Acabado: Barniz mate</li>
+                            <li>Garantía: 5 años</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-producto">
+                    <img src="imagenes/silla-espera-hoteleria.jpg" alt="Silla de Espera Hotelería">
+                    <div class="p-3">
+                        <h5>Silla de Espera Hotelería</h5>
+                        <p class="text-muted mb-1">Categoría: Hotelería</p>
+                        <p class="precio">L. 3,450</p>
+                        <ul class="small">
+                            <li>Madera: Pino Oocarpa</li>
+                            <li>Dimensiones: 55 x 55 x 85 cm</li>
+                            <li>Acabado: Tela y barniz</li>
+                            <li>Garantía: 2 años</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-producto">
+                    <img src="imagenes/archivador-vertical-pino.jpg" alt="Archivador Vertical en Pino">
+                    <div class="p-3">
+                        <h5>Archivador Vertical en Pino</h5>
+                        <p class="text-muted mb-1">Categoría: Archivo</p>
+                        <p class="precio">L. 6,200</p>
+                        <ul class="small">
+                            <li>Madera: Pino Oocarpa</li>
+                            <li>Dimensiones: 50 x 45 x 130 cm</li>
+                            <li>Acabado: Barniz transparente</li>
+                            <li>Garantía: 3 años</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-producto">
+                    <img src="imagenes/cama-individual-hoteleria.jpg" alt="Cama Individual Hotelería">
+                    <div class="p-3">
+                        <h5>Cama Individual Hotelería</h5>
+                        <p class="text-muted mb-1">Categoría: Hotelería</p>
+                        <p class="precio">L. 9,800</p>
+                        <ul class="small">
+                            <li>Madera: Cedro</li>
+                            <li>Dimensiones: 200 x 100 x 50 cm</li>
+                            <li>Acabado: Barniz natural</li>
+                            <li>Garantía: 4 años</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-producto">
+                    <img src="imagenes/mesa-centro-ejecutiva.jpg" alt="Mesa de Centro Ejecutiva">
+                    <div class="p-3">
+                        <h5>Mesa de Centro Ejecutiva</h5>
+                        <p class="text-muted mb-1">Categoría: Línea Ejecutiva</p>
+                        <p class="precio">L. 7,900</p>
+                        <ul class="small">
+                            <li>Madera: Caoba</li>
+                            <li>Dimensiones: 120 x 60 x 45 cm</li>
+                            <li>Acabado: Lacado mate</li>
+                            <li>Garantía: 3 años</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-producto">
+                    <img src="imagenes/banco-universitario.jpg" alt="Banco Universitario">
+                    <div class="p-3">
+                        <h5>Banco Universitario</h5>
+                        <p class="text-muted mb-1">Categoría: Aulas Universitarias</p>
+                        <p class="precio">L. 1,850</p>
+                        <ul class="small">
+                            <li>Pino y metal</li>
+                            <li>Dimensiones: 120 x 40 x 45 cm</li>
+                            <li>Acabado: Pintura epóxica</li>
+                            <li>Garantía: 2 años</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-producto">
+                    <img src="imagenes/credenza-ejecutiva-nogal.jpg" alt="Credenza Ejecutiva en Nogal">
+                    <div class="p-3">
+                        <h5>Credenza Ejecutiva en Nogal</h5>
+                        <p class="text-muted mb-1">Categoría: Línea Ejecutiva</p>
+                        <p class="precio">L. 21,300</p>
+                        <ul class="small">
+                            <li>Madera: Nogal</li>
+                            <li>Dimensiones: 180 x 50 x 85 cm</li>
+                            <li>Acabado: Aceite natural</li>
+                            <li>Garantía: 5 años</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-producto">
+                    <img src="imagenes/mesa-noche-hoteleria.jpg" alt="Mesa de Noche Hotelería">
+                    <div class="p-3">
+                        <h5>Mesa de Noche Hotelería</h5>
+                        <p class="text-muted mb-1">Categoría: Hotelería</p>
+                        <p class="precio">L. 2,750</p>
+                        <ul class="small">
+                            <li>Madera: Pino Oocarpa</li>
+                            <li>Dimensiones: 50 x 40 x 55 cm</li>
+                            <li>Acabado: Barniz transparente</li>
+                            <li>Garantía: 2 años</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-        <hr>
+        <h2 class="mt-5 mb-4">Tabla Comparativa de Fichas Técnicas y Certificación Forestal</h2>
 
-        <div>
-            <h3>Silla Operativa Ergonómica</h3>
-            <p>Categoría: Línea Ejecutiva</p>
-            <p>Precio: L. 4,800</p>
-            <p>Detalles técnicos:</p>
-            <ul>
-                <li>Tipo de madera: Estructura metálica con respaldo de malla</li>
-                <li>Dimensiones: 60 cm x 60 cm x 110 cm</li>
-                <li>Acabado: Negro mate</li>
-                <li>Garantía: 3 años</li>
-            </ul>
-            <!-- <img src="https://images.unsplash.com/photo-1580480055273-228ff5388cf8?w=400" alt="Silla Operativa Ergonómica" width="300"> -->
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Línea de Mueble</th>
+                        <th>Especie Forestal</th>
+                        <th>Humedad en Horno (%)</th>
+                        <th>Resistencia Mecánica</th>
+                        <th>Certificación Ambiental ICF</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ME-001</td>
+                        <td>Línea Ejecutiva</td>
+                        <td>Caoba</td>
+                        <td>8%</td>
+                        <td>Alta</td>
+                        <td><span class="badge bg-success">Certificado Verde</span></td>
+                    </tr>
+                    <tr>
+                        <td>ME-002</td>
+                        <td>Línea Ejecutiva</td>
+                        <td>Cedro</td>
+                        <td>9%</td>
+                        <td>Alta</td>
+                        <td><span class="badge bg-success">Certificado Verde</span></td>
+                    </tr>
+                    <tr>
+                        <td>AU-015</td>
+                        <td>Aulas Universitarias</td>
+                        <td>Pino Oocarpa</td>
+                        <td>10%</td>
+                        <td>Media</td>
+                        <td><span class="badge bg-warning text-dark">Certificado Amarillo</span></td>
+                    </tr>
+                    <tr>
+                        <td>HO-008</td>
+                        <td>Hotelería</td>
+                        <td>Nogal</td>
+                        <td>8%</td>
+                        <td>Alta</td>
+                        <td><span class="badge bg-success">Certificado Verde</span></td>
+                    </tr>
+                    <tr>
+                        <td>AR-003</td>
+                        <td>Archivo</td>
+                        <td>Pino Oocarpa</td>
+                        <td>11%</td>
+                        <td>Media</td>
+                        <td><span class="badge bg-warning text-dark">Certificado Amarillo</span></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-
-        <hr>
-
-        <div>
-            <h3>Mesa de Directorio en Cedro</h3>
-            <p>Categoría: Línea Ejecutiva</p>
-            <p>Precio: L. 39,900</p>
-            <p>Detalles técnicos:</p>
-            <ul>
-                <li>Tipo de madera: Cedro</li>
-                <li>Dimensiones: 240 cm x 120 cm x 76 cm</li>
-                <li>Acabado: Barniz natural</li>
-                <li>Garantía: 5 años</li>
-            </ul>
-            <!-- <img src="https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?w=400" alt="Mesa de Directorio en Cedro" width="300"> -->
-        </div>
-
-        <hr>
-
-        <div>
-            <h3>Estantería en Pino Oocarpa</h3>
-            <p>Categoría: Archivo</p>
-            <p>Precio: L. 8,750</p>
-            <p>Detalles técnicos:</p>
-            <ul>
-                <li>Tipo de madera: Pino Oocarpa</li>
-                <li>Dimensiones: 90 cm x 40 cm x 180 cm</li>
-                <li>Acabado: Barniz transparente</li>
-                <li>Garantía: 3 años</li>
-            </ul>
-            <!-- <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400" alt="Estantería en Pino Oocarpa" width="300"> -->
-        </div>
-
-        <hr>
-
-        <div>
-            <h3>Pupitre Universitario</h3>
-            <p>Categoría: Aulas Universitarias</p>
-            <p>Precio: L. 1,290</p>
-            <p>Detalles técnicos:</p>
-            <ul>
-                <li>Tipo de madera: Pino y metal</li>
-                <li>Dimensiones: 70 cm x 50 cm x 75 cm</li>
-                <li>Acabado: Pintura epóxica</li>
-                <li>Garantía: 2 años</li>
-            </ul>
-            <!-- <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400" alt="Pupitre Universitario" width="300"> -->
-        </div>
-
-        <hr>
-
-        <div>
-            <h3>Mueble de Recepción en Nogal</h3>
-            <p>Categoría: Hotelería</p>
-            <p>Precio: L. 18,600</p>
-            <p>Detalles técnicos:</p>
-            <ul>
-                <li>Tipo de madera: Nogal</li>
-                <li>Dimensiones: 200 cm x 60 cm x 110 cm</li>
-                <li>Acabado: Aceite natural</li>
-                <li>Garantía: 5 años</li>
-            </ul>
-            <!-- <img src="https://images.unsplash.com/photo-1631889993959-41b4e9c6e3c5?w=400" alt="Mueble de Recepción en Nogal" width="300"> -->
-        </div>
-
-        <hr>
-
-        <div>
-            <h3>Escritorio Presidencial en Caoba</h3>
-            <p>Categoría: Línea Ejecutiva</p>
-            <p>Precio: L. 32,000</p>
-            <p>Detalles técnicos:</p>
-            <ul>
-                <li>Tipo de madera: Caoba</li>
-                <li>Dimensiones: 180 cm x 90 cm x 78 cm</li>
-                <li>Acabado: Lacado alto brillo</li>
-                <li>Garantía: 5 años</li>
-            </ul>
-            <!-- <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400" alt="Escritorio Presidencial en Caoba" width="300"> -->
-        </div>
-
-        <hr>
-
-        <div>
-            <h3>Mesa de Juntas en Cedro</h3>
-            <p>Categoría: Línea Ejecutiva</p>
-            <p>Precio: L. 27,500</p>
-            <p>Detalles técnicos:</p>
-            <ul>
-                <li>Tipo de madera: Cedro</li>
-                <li>Dimensiones: 300 cm x 120 cm x 76 cm</li>
-                <li>Acabado: Barniz mate</li>
-                <li>Garantía: 5 años</li>
-            </ul>
-            <!-- <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400" alt="Mesa de Juntas en Cedro" width="300"> -->
-        </div>
-
-        <hr>
-
-        <div>
-            <h3>Silla de Espera Hotelería</h3>
-            <p>Categoría: Hotelería</p>
-            <p>Precio: L. 3,450</p>
-            <p>Detalles técnicos:</p>
-            <ul>
-                <li>Tipo de madera: Pino Oocarpa</li>
-                <li>Dimensiones: 55 cm x 55 cm x 85 cm</li>
-                <li>Acabado: Tela y barniz</li>
-                <li>Garantía: 2 años</li>
-            </ul>
-            <!-- <img src="https://images.unsplash.com/photo-1506439773649-6e0eb8d19f1a?w=400" alt="Silla de Espera Hotelería" width="300"> -->
-        </div>
-
-        <hr>
-
-        <div>
-            <h3>Archivador Vertical en Pino</h3>
-            <p>Categoría: Archivo</p>
-            <p>Precio: L. 6,200</p>
-            <p>Detalles técnicos:</p>
-            <ul>
-                <li>Tipo de madera: Pino Oocarpa</li>
-                <li>Dimensiones: 50 cm x 45 cm x 130 cm</li>
-                <li>Acabado: Barniz transparente</li>
-                <li>Garantía: 3 años</li>
-            </ul>
-            <!-- <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400" alt="Archivador Vertical en Pino" width="300"> -->
-        </div>
-
-        <hr>
-
-        <div>
-            <h3>Cama Individual Hotelería</h3>
-            <p>Categoría: Hotelería</p>
-            <p>Precio: L. 9,800</p>
-            <p>Detalles técnicos:</p>
-            <ul>
-                <li>Tipo de madera: Cedro</li>
-                <li>Dimensiones: 200 cm x 100 cm x 50 cm</li>
-                <li>Acabado: Barniz natural</li>
-                <li>Garantía: 4 años</li>
-            </ul>
-            <!-- <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400" alt="Cama Individual Hotelería" width="300"> -->
-        </div>
-
-        <hr>
-
-        <div>
-            <h3>Mesa de Centro Ejecutiva</h3>
-            <p>Categoría: Línea Ejecutiva</p>
-            <p>Precio: L. 7,900</p>
-            <p>Detalles técnicos:</p>
-            <ul>
-                <li>Tipo de madera: Caoba</li>
-                <li>Dimensiones: 120 cm x 60 cm x 45 cm</li>
-                <li>Acabado: Lacado mate</li>
-                <li>Garantía: 3 años</li>
-            </ul>
-            <!-- <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400" alt="Mesa de Centro Ejecutiva" width="300"> -->
-        </div>
-
-        <hr>
-
-        <div>
-            <h3>Banco Universitario</h3>
-            <p>Categoría: Aulas Universitarias</p>
-            <p>Precio: L. 1,850</p>
-            <p>Detalles técnicos:</p>
-            <ul>
-                <li>Tipo de madera: Pino y metal</li>
-                <li>Dimensiones: 120 cm x 40 cm x 45 cm</li>
-                <li>Acabado: Pintura epóxica</li>
-                <li>Garantía: 2 años</li>
-            </ul>
-            <!-- <img src="https://images.unsplash.com/photo-1497366813868-3feceddb9d72?w=400" alt="Banco Universitario" width="300"> -->
-        </div>
-
-        <hr>
-
-        <div>
-            <h3>Credenza Ejecutiva en Nogal</h3>
-            <p>Categoría: Línea Ejecutiva</p>
-            <p>Precio: L. 21,300</p>
-            <p>Detalles técnicos:</p>
-            <ul>
-                <li>Tipo de madera: Nogal</li>
-                <li>Dimensiones: 180 cm x 50 cm x 85 cm</li>
-                <li>Acabado: Aceite natural</li>
-                <li>Garantía: 5 años</li>
-            </ul>
-            <!-- <img src="https://images.unsplash.com/photo-1618220179428-22790b461013?w=400" alt="Credenza Ejecutiva en Nogal" width="300"> -->
-        </div>
-
-        <hr>
-
-        <div>
-            <h3>Mesa de Noche Hotelería</h3>
-            <p>Categoría: Hotelería</p>
-            <p>Precio: L. 2,750</p>
-            <p>Detalles técnicos:</p>
-            <ul>
-                <li>Tipo de madera: Pino Oocarpa</li>
-                <li>Dimensiones: 50 cm x 40 cm x 55 cm</li>
-                <li>Acabado: Barniz transparente</li>
-                <li>Garantía: 2 años</li>
-            </ul>
-            <!-- <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=400" alt="Mesa de Noche Hotelería" width="300"> -->
-        </div>
-
-        <hr>
-
-        <h2>Tabla Comparativa de Fichas Técnicas y Certificación Forestal</h2>
-
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Código</th>
-                    <th>Línea de Mueble</th>
-                    <th>Especie Forestal</th>
-                    <th>Humedad en Horno (%)</th>
-                    <th>Resistencia Mecánica</th>
-                    <th>Certificación Ambiental ICF</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>ME-001</td>
-                    <td>Línea Ejecutiva</td>
-                    <td>Caoba</td>
-                    <td>8%</td>
-                    <td>Alta</td>
-                    <td>Certificado Verde</td>
-                </tr>
-                <tr>
-                    <td>ME-002</td>
-                    <td>Línea Ejecutiva</td>
-                    <td>Cedro</td>
-                    <td>9%</td>
-                    <td>Alta</td>
-                    <td>Certificado Verde</td>
-                </tr>
-                <tr>
-                    <td>AU-015</td>
-                    <td>Aulas Universitarias</td>
-                    <td>Pino Oocarpa</td>
-                    <td>10%</td>
-                    <td>Media</td>
-                    <td>Certificado Amarillo</td>
-                </tr>
-                <tr>
-                    <td>HO-008</td>
-                    <td>Hotelería</td>
-                    <td>Nogal</td>
-                    <td>8%</td>
-                    <td>Alta</td>
-                    <td>Certificado Verde</td>
-                </tr>
-                <tr>
-                    <td>AR-003</td>
-                    <td>Archivo</td>
-                    <td>Pino Oocarpa</td>
-                    <td>11%</td>
-                    <td>Media</td>
-                    <td>Certificado Amarillo</td>
-                </tr>
-            </tbody>
-        </table>
 
     </main>
 
-    <hr>
-
     <footer>
-        <h3>Información de Contacto</h3>
-        <p>
-            Fábrica en Siguatepeque:<br>
-            KM 114 Carretera CA-5, Siguatepeque - Tel: 2773-4589
-        </p>
-        <p>
-            Sala de ventas en Tegucigalpa:<br>
-            Blvd. Morazán, Tegucigalpa - Tel: 2238-7612
-        </p>
-
-        <h3>Redes Sociales</h3>
-        <p>
-            <a href="https://www.facebook.com" target="_blank">Facebook</a> |
-            <a href="https://www.instagram.com" target="_blank">Instagram</a>
-        </p>
-
-        <p>© 2026 MUBLESIG HONDURAS - Todos los derechos reservados</p>
-        <p>Jeser Aziel Amaya Ortiz - 20211030684. UNAH. Todos los derechos reservados.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Información de Contacto</h5>
+                    <p>
+                        <strong>Fábrica en Siguatepeque:</strong><br>
+                        KM 114 Carretera CA-5, Siguatepeque - Tel: 2773-4589
+                    </p>
+                    <p>
+                        <strong>Sala de ventas en Tegucigalpa:</strong><br>
+                        Blvd. Morazán, Tegucigalpa - Tel: 2238-7612
+                    </p>
+                </div>
+                <div class="col-md-6">    
+                    <h5>Redes Sociales</h5>
+                    <p>
+                        <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+                        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                    </p>
+                    <p>© 2026 MUBLESIG HONDURAS - Todos los derechos reservados</p>
+                    <p>Jeser Aziel Amaya Ortiz - 20211030684. UNAH. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>    
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

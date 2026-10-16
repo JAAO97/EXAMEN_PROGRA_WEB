@@ -2,172 +2,197 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MUBLESIG HONDURAS - Lotes Especiales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <div>
-        <p>Teléfonos de atención: 2773-4589 | 2238-7612</p>
-        <p>Horario de taller: Lun-Vie 8am - 5pm</p>
+    <div class="barra-superior">
+        <div class="container">
+            Teléfonos de atención: 2773-4589 | 2238-7612 &nbsp;&nbsp;|&nbsp;&nbsp; Horario de taller: Lun-Vie 8am - 5pm
+        </div>
     </div>
 
-    <header>
-        <h1>MUBLESIG HONDURAS</h1>
-        <nav>
-            <a href="index.html">Inicio</a> |
-            <a href="catalogo.html">Catálogo</a> |
-            <a href="lotes.html">Lotes Especiales</a> |
-            <a href="licitaciones.html">Licitaciones</a> |
-            <a href="contacto.html">Contacto</a> |
-            <a href="https://wa.me/50497527953" target="_blank">Cotizar Lote por WhatsApp</a>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">MUBLESIG HONDURAS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lotes.html">Lotes Especiales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="licitaciones.html">Licitaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+                <a href="https://wa.me/50497527953" class="btn btn-whatsapp" target="_blank">Cotizar Lote por WhatsApp</a>
+            </div>
+        </div>
+    </nav>
 
-    <hr>
+    <main class="container my-5">
+        <h2 class="mb-4">Lotes Especiales y Descuentos</h2>
+        <p class="mb-5">Productos en liquidación o con descuento por lote.</p>
 
-    <main>
-        <h2>Lotes Especiales y Descuentos</h2>
-        <p>Productos en liquidación o con descuento por lote.</p>
+        <div class="row">
 
-        <div>
-            <p><strong>DESCUENTO POR LOTE</strong></p>
-            <h3>Silla Operativa Ergonómica (Lote de 20 unidades)</h3>
-            <p>Categoría: Línea Ejecutiva</p>
-            <p>Precio Regular: <s>L. 4,800</s></p>
-            <p><strong>Precio Especial: L. 3,900</strong></p>
-            <p>Detalles técnicos:</p>
-            <ul>
-                <li>Tipo de madera: Estructura metálica con respaldo de malla</li>
-                <li>Dimensiones: 60 cm x 60 cm x 110 cm</li>
-                <li>Acabado: Negro mate</li>
-                <li>Garantía: 3 años</li>
-            </ul>
-            <!-- <img src="https://images.unsplash.com/photo-1580480055273-228ff5388cf8?w=400" alt="Silla Operativa Ergonómica" width="300"> -->
+            <div class="col-md-6">
+                <div class="card-producto">
+                    <img src="imagenes/silla-operativa-ergonomica.jpg" alt="Silla Operativa Ergonómica">
+                    <div class="p-3">
+                        <span class="badge-descuento">DESCUENTO POR LOTE</span>
+                        <h5 class="mt-2">Silla Operativa Ergonómica (Lote de 20)</h5>
+                        <p class="text-muted mb-1">Categoría: Línea Ejecutiva</p>
+                        <p class="precio-tachado">Precio Regular: L. 4,800</p>
+                        <p class="precio">Precio Especial: L. 3,900</p>
+                        <ul class="small">
+                            <li>Estructura metálica + malla</li>
+                            <li>Dimensiones: 60 x 60 x 110 cm</li>
+                            <li>Acabado: Negro mate</li>
+                            <li>Garantía: 3 años</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        <div class="col-md-6">
+                <div class="card-producto">
+                    <img src="imagenes/pupitre-universitario.jpg" alt="Pupitre Universitario">
+                    <div class="p-3">
+                        <span class="badge-descuento">OFERTA</span>
+                        <h5 class="mt-2">Pupitre Universitario (Lote de 50)</h5>
+                        <p class="text-muted mb-1">Categoría: Aulas Universitarias</p>
+                        <p class="precio-tachado">Precio Regular: L. 1,290</p>
+                        <p class="precio">Precio Especial: L. 990</p>
+                        <ul class="small">
+                            <li>Pino y metal</li>
+                            <li>Dimensiones: 70 x 50 x 75 cm</li>
+                            <li>Acabado: Pintura epóxica</li>
+                            <li>Garantía: 2 años</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card-producto">
+                    <img src="imagenes/estanteria-pino-oocarpa.jpg" alt="Estantería en Pino Oocarpa">
+                    <div class="p-3">
+                        <span class="badge-descuento">DESCUENTO POR LOTE</span>
+                        <h5 class="mt-2">Estantería en Pino Oocarpa (Lote de 10)</h5>
+                        <p class="text-muted mb-1">Categoría: Archivo</p>
+                        <p class="precio-tachado">Precio Regular: L. 8,750</p>
+                        <p class="precio">Precio Especial: L. 7,200</p>
+                        <ul class="small">
+                            <li>Madera: Pino Oocarpa</li>
+                            <li>Dimensiones: 90 x 40 x 180 cm</li>
+                            <li>Acabado: Barniz transparente</li>
+                            <li>Garantía: 3 años</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card-producto">
+                    <img src="imagenes/mesa-noche-hoteleria.jpg" alt="Mesa de Noche Hotelería">
+                    <div class="p-3">
+                        <span class="badge-descuento">OFERTA</span>
+                        <h5 class="mt-2">Mesa de Noche Hotelería (Lote de 30)</h5>
+                        <p class="text-muted mb-1">Categoría: Hotelería</p>
+                        <p class="precio-tachado">Precio Regular: L. 2,750</p>
+                        <p class="precio">Precio Especial: L. 2,100</p>
+                        <ul class="small">
+                            <li>Madera: Pino Oocarpa</li>
+                            <li>Dimensiones: 50 x 40 x 55 cm</li>
+                            <li>Acabado: Barniz transparente</li>
+                            <li>Garantía: 2 años</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-        <hr>
+        <h2 class="mt-5 mb-4">Calculadora Visual de Pedidos</h2>
+        <p class="mb-4">Simule el presupuesto de un lote de mobiliario institucional.</p>
 
-        <div>
-            <p><strong>OFERTA</strong></p>
-            <h3>Pupitre Universitario (Lote de 50 unidades)</h3>
-            <p>Categoría: Aulas Universitarias</p>
-            <p>Precio Regular: <s>L. 1,290</s></p>
-            <p><strong>Precio Especial: L. 990</strong></p>
-            <p>Detalles técnicos:</p>
-            <ul>
-                <li>Tipo de madera: Pino y metal</li>
-                <li>Dimensiones: 70 cm x 50 cm x 75 cm</li>
-                <li>Acabado: Pintura epóxica</li>
-                <li>Garantía: 2 años</li>
-            </ul>
-            <!-- <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400" alt="Pupitre Universitario" width="300"> -->
-        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <form class="border rounded p-4 bg-white shadow-sm">
+                    <div class="mb-3">
+                        <label for="cantidad" class="form-label">Cantidad de Piezas a Cotizar</label>
+                        <input type="number" class="form-control" id="cantidad" name="cantidad" min="1" value="1">
+                    </div>
 
-        <hr>
+                    <div class="mb-3">
+                        <label for="mueble" class="form-label">Tipo de Mueble</label>
+                        <select class="form-select" id="mueble" name="mueble">
+                            <option value="1290">Pupitre Universitario - L. 1,290</option>
+                            <option value="4800">Silla Ergonómica Operativa - L. 4,800</option>
+                            <option value="24500">Escritorio Ejecutivo en Caoba - L. 24,500</option>
+                            <option value="39900">Mesa de Directorio en Cedro - L. 39,900</option>
+                        </select>
+                    </div>
 
-        <div>
-            <p><strong>DESCUENTO POR LOTE</strong></p>
-            <h3>Estantería en Pino Oocarpa (Lote de 10 unidades)</h3>
-            <p>Categoría: Archivo</p>
-            <p>Precio Regular: <s>L. 8,750</s></p>
-            <p><strong>Precio Especial: L. 7,200</strong></p>
-            <p>Detalles técnicos:</p>
-            <ul>
-                <li>Tipo de madera: Pino Oocarpa</li>
-                <li>Dimensiones: 90 cm x 40 cm x 180 cm</li>
-                <li>Acabado: Barniz transparente</li>
-                <li>Garantía: 3 años</li>
-            </ul>
-            <!-- <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=400" alt="Estantería en Pino Oocarpa" width="300"> -->
-        </div>
+                    <div class="mb-3">
+                        <label for="destino" class="form-label">Destino y Flete sobre la CA-5</label>
+                        <select class="form-select" id="destino" name="destino">
+                            <option value="300">Siguatepeque/Comayagua - Flete: L. 300</option>
+                            <option value="1000">Tegucigalpa o SPS - Flete: L. 1,000</option>
+                            <option value="3500">Roatán/Islas de la Bahía - Flete: L. 3,500</option>
+                        </select>
+                    </div>
 
-        <hr>
+                    <div class="alert alert-info">
+                        <strong>* Descuento institucional del 12% a partir de 10 piezas</strong>
+                    </div>
 
-        <div>
-            <p><strong>OFERTA</strong></p>
-            <h3>Mesa de Noche Hotelería (Lote de 30 unidades)</h3>
-            <p>Categoría: Hotelería</p>
-            <p>Precio Regular: <s>L. 2,750</s></p>
-            <p><strong>Precio Especial: L. 2,100</strong></p>
-            <p>Detalles técnicos:</p>
-            <ul>
-                <li>Tipo de madera: Pino Oocarpa</li>
-                <li>Dimensiones: 50 cm x 40 cm x 55 cm</li>
-                <li>Acabado: Barniz transparente</li>
-                <li>Garantía: 2 años</li>
-            </ul>
-            <!-- <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=400" alt="Mesa de Noche Hotelería" width="300"> -->
-        </div>
+                    <button type="button" class="btn btn-success w-100">Calcular Presupuesto</button>
+                </form>
+            </div>
 
-        <hr>
-
-        <h2>Calculadora Visual de Pedidos</h2>
-        <p>Simule el presupuesto de un lote de mobiliario institucional.</p>
-
-        <form>
-            <p>
-                <label for="cantidad">Cantidad de Piezas a Cotizar:</label><br>
-                <input type="number" id="cantidad" name="cantidad" min="1" value="1">
-            </p>
-
-            <p>
-                <label for="mueble">Tipo de Mueble:</label><br>
-                <select id="mueble" name="mueble">
-                    <option value="1290">Pupitre Universitario - L. 1,290</option>
-                    <option value="4800">Silla Ergonómica Operativa - L. 4,800</option>
-                    <option value="24500">Escritorio Ejecutivo en Caoba - L. 24,500</option>
-                    <option value="39900">Mesa de Directorio en Cedro - L. 39,900</option>
-                </select>
-            </p>
-
-            <p>
-                <label for="destino">Destino y Flete sobre la CA-5:</label><br>
-                <select id="destino" name="destino">
-                    <option value="300">Siguatepeque/Comayagua - Flete: L. 300</option>
-                    <option value="1000">Tegucigalpa o SPS - Flete: L. 1,000</option>
-                    <option value="3500">Roatán/Islas de la Bahía - Flete: L. 3,500</option>
-                </select>
-            </p>
-
-            <p>
-                <strong>* Descuento institucional del 12% a partir de 10 piezas</strong>
-            </p>
-
-            <p>
-                <button type="button">Calcular Presupuesto</button>
-            </p>
-        </form>
-
-        <div>
-            <p><strong>Resultado del cálculo:</strong></p>
-            <p>El costo estimado de su pedido es L. 0</p>
-            <p><em>Esto se puede hacer con...</em></p>
+            <div class="col-md-6">
+                <div class="resultado-calculadora">
+                    <p><strong>Resultado del cálculo:</strong></p>
+                    <p>El costo estimado de su pedido es L. 0</p>
+                </div>
+            </div>
         </div>
 
     </main>
 
-    <hr>
-
     <footer>
-        <h3>Información de Contacto</h3>
-        <p>
-            Fábrica en Siguatepeque:<br>
-            KM 114 Carretera CA-5, Siguatepeque - Tel: 2773-4589
-        </p>
-        <p>
-            Sala de ventas en Tegucigalpa:<br>
-            Blvd. Morazán, Tegucigalpa - Tel: 2238-7612
-        </p>
-
-        <h3>Redes Sociales</h3>
-        <p>
-            <a href="https://www.facebook.com" target="_blank">Facebook</a> |
-            <a href="https://www.instagram.com" target="_blank">Instagram</a>
-        </p>
-
-        <p>© 2026 MUBLESIG HONDURAS - Todos los derechos reservados</p>
-        <p>Jeser Aziel Amaya Ortiz - 20211030684. UNAH. Todos los derechos reservados.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Información de Contacto</h5>
+                    <p>
+                        <strong>Fábrica en Siguatepeque:</strong><br>
+                        KM 114 Carretera CA-5, Siguatepeque - Tel: 2773-4589
+                    </p>
+                    <p>
+                        <strong>Sala de ventas en Tegucigalpa:</strong><br>
+                        Blvd. Morazán, Tegucigalpa - Tel: 2238-7612
+                    </p>
+                </div>
+                <div class="col-md-6">    
+                    <h5>Redes Sociales</h5>
+                    <p>
+                        <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+                        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                    </p>
+                    <p>© 2026 MUBLESIG HONDURAS - Todos los derechos reservados</p>
+                    <p>Jeser Aziel Amaya Ortiz - 20211030684. UNAH. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>    
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
