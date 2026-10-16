@@ -1,0 +1,27 @@
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Carpetas y archivos de editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos temporales
+*.tmp
+*.temp
+*~
+*.log
+
+# Archivos de dependencias (por si se usan después)
+node_modules/
+package-lock.json
+
+# Archivos de sistema de Git
+*.swp
+*.swo
+
+# Carpetas de caché
+.cache/
